@@ -1,0 +1,22 @@
+{
+  "name": "react-linkedin-sdk",
+  "version": "1.0.0",
+  "description": "LinkedIn SDK Components built with ReactJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/praveenkumar-outlook/react-linkedin-sdk.git"
+  },
+  "keywords": [
+    "Linkedin"
+  ],
+  "author": "Praveenkumar K <praveen.ece@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/praveenkumar-outlook/react-linkedin-sdk/issues"
+  },
+  "homepage": "https://github.com/praveenkumar-outlook/react-linkedin-sdk#readme"
+}
