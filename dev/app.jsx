@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import {LinkedinLogin} from '../src/index';
+import {LinkedinLogin, LinkedinShare} from '../src/index';
 
 class App extends Component {
     onSuccess = (data) => {
@@ -21,6 +21,11 @@ class App extends Component {
                     onSuccess={this.onSuccess}
                     onError={this.onError}>
                 </LinkedinLogin>
+                <LinkedinShare
+                    apiKey='78reka6gey2jsx'
+                    authorize={true}
+                    lang='en_US'>
+                </LinkedinShare>
             </div>
         );
     }

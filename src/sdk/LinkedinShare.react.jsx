@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
-class LinkedinLogin extends Component {
+class LinkedinShare extends Component {
     static propTypes = {
         apiKey: PropTypes.string.isRequired,
         authorize: PropTypes.bool,
-        lang: PropTypes.string,
-        onSuccess: PropTypes.func.isRequired,
-        onError: PropTypes.func.isRequired
+        lang: PropTypes.string
     };
 
     static defaultProps = {
@@ -16,10 +14,6 @@ class LinkedinLogin extends Component {
     };
 
     componentDidMount() {
-        window.onLinkedInLoad = () => {
-            window.IN.Event.on(IN, 'auth', this.getProfileData);
-        };
-
         // Load the SDK asynchronously
         ((d, s, id) => {
             const element = d.getElementsByTagName(s)[0];
@@ -32,25 +26,18 @@ class LinkedinLogin extends Component {
             js.src = '//platform.linkedin.com/in.js';
             js.innerHTML = `api_key: ${this.props.apiKey}
                 authorize: ${this.props.authorize}
-                lang: ${this.props.lang}
-                onLoad: onLinkedInLoad`;
+                lang: ${this.props.lang}`;
             fjs.parentNode.insertBefore(js, fjs);
         })(document, 'script', 'linkedin-jssdk');
-    }
-
-    getProfileData = () => {
-        window.IN.API.Raw('/people/~')
-            .result(this.props.onSuccess)
-            .error(this.props.onError);
     }
 
     render() {
         return (
             <div>
-                <script type='IN/Login'></script>
+                <script type='IN/Share'></script>
             </div>
         )
     }
 }
 
-export default LinkedinLogin;
+export default LinkedinShare;
