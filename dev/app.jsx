@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import {LinkedinLogin, LinkedinShare} from '../src/index';
+import {LinkedinLogin, LinkedinProfile, LinkedinShare} from '../src/index';
 
 class App extends Component {
     onSuccess = (data) => {
@@ -26,6 +26,9 @@ class App extends Component {
                     authorize={true}
                     lang='en_US'>
                 </LinkedinShare>
+                <LinkedinProfile
+                    task='CERTIFICATION_NAME'>
+                </LinkedinProfile>
             </div>
         );
     }
