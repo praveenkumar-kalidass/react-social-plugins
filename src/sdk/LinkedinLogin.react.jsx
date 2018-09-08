@@ -6,8 +6,8 @@ class LinkedinLogin extends Component {
         apiKey: PropTypes.string.isRequired,
         authorize: PropTypes.bool,
         lang: PropTypes.string,
-        onSuccess: PropTypes.func.isRequired,
-        onError: PropTypes.func.isRequired
+        onError: PropTypes.func.isRequired,
+        onSuccess: PropTypes.func.isRequired
     };
 
     static defaultProps = {
@@ -21,35 +21,39 @@ class LinkedinLogin extends Component {
         };
 
         // Load the SDK asynchronously
-        ((d, s, id) => {
-            const element = d.getElementsByTagName(s)[0];
-            const fjs = element;
+        ((doc, tag, id) => {
+            const {apiKey, authorize, lang} = this.props,
+                [element] = doc.getElementsByTagName(tag),
+                fjs = element;
             let js = element;
-            if (d.getElementById(id)) {return;}
-            js = d.createElement(s);
+            if (doc.getElementById(id)) {
+                return;
+            }
+            js = doc.createElement(tag);
             js.id = id;
             js.type = 'text/javascript';
             js.src = '//platform.linkedin.com/in.js';
-            js.innerHTML = `api_key: ${this.props.apiKey}
-                authorize: ${this.props.authorize}
-                lang: ${this.props.lang}
+            js.innerHTML = `api_key: ${apiKey}
+                authorize: ${authorize}
+                lang: ${lang}
                 onLoad: onLinkedInLoad`;
             fjs.parentNode.insertBefore(js, fjs);
         })(document, 'script', 'linkedin-jssdk');
     }
 
     getProfileData = () => {
-        window.IN.API.Raw('/people/~')
-            .result(this.props.onSuccess)
-            .error(this.props.onError);
+        const {onError, onSuccess} = this.props;
+        window.IN.API.Raw('/people/~').
+            result(onSuccess).
+            error(onError);
     }
 
     render() {
         return (
             <div>
-                <script type='IN/Login'></script>
+                <script type="IN/Login" />
             </div>
-        )
+        );
     }
 }
 
