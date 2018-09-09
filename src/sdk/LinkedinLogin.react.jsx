@@ -15,7 +15,7 @@ class LinkedinLogin extends Component {
         lang: 'en_US'
     };
 
-    componentDidMount() {
+    componentDidMount () {
         window.onLinkedInLoad = () => {
             window.IN.Event.on(IN, 'auth', this.getProfileData);
         };
@@ -48,7 +48,7 @@ class LinkedinLogin extends Component {
             error(onError);
     }
 
-    render() {
+    render () {
         return (
             <div>
                 <script type="IN/Login" />

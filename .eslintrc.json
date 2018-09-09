@@ -52,11 +52,6 @@
             "error",
             "never"
         ],
-        "space-before-function-paren": ["error", {
-            "anonymous": "always",
-            "named": "never",
-            "asyncArrow": "always"
-        }],
         "max-statements": [
             "error",
             15
@@ -65,7 +60,8 @@
             "error",
             {
                 "exceptMethods": [
-                    "render"
+                    "render",
+                    "shouldComponentUpdate"
                 ]
             }
         ],
@@ -76,6 +72,12 @@
         "new-cap": [
             "off",
             "always"
+        ],
+        "max-len": [
+            "error",
+            {
+                "ignoreUrls": true
+            }
         ]
     }
 }
