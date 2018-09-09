@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config ./dev/webpack.config.js",
+    "build": "babel ./src --out-dir ./lib",
     "eslint": "eslint --ext .jsx,.js src/",
     "lint-dev": "eslint --ext .jsx,.js dev/"
   },
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/praveenkumar-outlook/react-linkedin-sdk#readme",
   "devDependencies": {
+    "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^9.0.0",
