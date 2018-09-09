@@ -1,16 +1,35 @@
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin'),
+    path = require('path'),
+    webpack = require('webpack');
 
 module.exports = {
-    entry: path.join(__dirname, 'app.jsx'),
-    output: {
-        path: path.join(__dirname, '../public'),
-        filename: 'app.bundle.js'
+    devServer: {
+        contentBase: path.join(__dirname, '../public'),
+        open: true,
+        port: 3000
     },
+    devtool: 'source-map',
+    entry: path.join(__dirname, 'app.jsx'),
     mode: 'development',
-    resolve: {
-        extensions: ['.js', '.jsx']
+    module: {
+        rules: [
+            {
+                exclude: /node_modules/u,
+                test: /\.(jsx)$/u,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        babelrc: false,
+                        plugins: ['transform-class-properties'],
+                        presets: ['@babel/preset-react']
+                    }
+                }
+            }
+        ]
+    },
+    output: {
+        filename: 'app.bundle.js',
+        path: path.join(__dirname, '../public')
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -19,30 +38,10 @@ module.exports = {
         }),
         new webpack.HotModuleReplacementPlugin()
     ],
-    devtool: 'source-map',
-    devServer: {
-        contentBase: path.join(__dirname, '../public'),
-        open: true,
-        port: 3000
-    },
-    module: {
-        rules: [
-            {
-                test: /\.(jsx)$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        babelrc: false,
-                        presets: [
-                            '@babel/preset-react'
-                        ],
-                        plugins: [
-                            'transform-class-properties'
-                        ]
-                    }
-                }
-            }
+    resolve: {
+        extensions: [
+            '.js',
+            '.jsx'
         ]
     }
 };

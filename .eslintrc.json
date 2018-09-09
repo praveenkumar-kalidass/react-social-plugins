@@ -78,6 +78,9 @@
             {
                 "ignoreUrls": true
             }
+        ],
+        "no-alert": [
+            "off"
         ]
     }
 }

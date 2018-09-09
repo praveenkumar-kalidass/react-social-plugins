@@ -1,40 +1,41 @@
+import {LinkedinLogin, LinkedinProfile, LinkedinShare} from '../src/index';
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import {LinkedinLogin, LinkedinProfile, LinkedinShare} from '../src/index';
 
 class App extends Component {
-    onSuccess = (data) => {
+    handleError = (data) => {
         alert('Success', data);
     }
 
-    onError = () => {
+    handleSuccess = (data) => {
         alert('Error', data);
     }
 
-    render() {
+    render () {
         return (
             <div>
                 <LinkedinLogin
-                    apiKey='78reka6gey2jsx'
-                    authorize={true}
-                    lang='en_US'
-                    onSuccess={this.onSuccess}
-                    onError={this.onError}>
-                </LinkedinLogin>
+                    apiKey="78reka6gey2jsx"
+                    authorize
+                    lang="en_US"
+                    onError={this.handleError}
+                    onSuccess={this.handleSuccess}
+                />
                 <LinkedinShare
-                    apiKey='78reka6gey2jsx'
-                    authorize={true}
-                    lang='en_US'>
-                </LinkedinShare>
+                    apiKey="78reka6gey2jsx"
+                    authorize
+                    lang="en_US"
+                />
                 <LinkedinProfile
-                    task='CERTIFICATION_NAME'>
-                </LinkedinProfile>
+                    lang="en_US"
+                    task="CERTIFICATION_NAME"
+                />
             </div>
         );
     }
 }
 
 ReactDOM.render(
-    <App/>,
+    <App />,
     document.getElementById('app')
 );
