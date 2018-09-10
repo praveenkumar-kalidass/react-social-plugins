@@ -16,7 +16,10 @@
   "keywords": [
     "reactjs",
     "linkedin",
-    "sdk"
+    "sdk",
+    "login",
+    "share",
+    "profile"
   ],
   "author": "Praveenkumar K <praveen.ece@outlook.com>",
   "license": "MIT",
