@@ -1,11 +1,11 @@
-# React Linkedin SDK
+# React Linkedin Plugins
 
 ## Install
 
 Install the component using [NPM](https://www.npmjs.com/):
 
 ```sh
-$ npm install --save react-linkedin-sdk
+$ npm install --save react-linkedin-plugins
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ import {
     LinkedinLogin,
     LinkedinProfile,
     LinkedinShare
-} from 'react-linkedin-sdk';
+} from 'react-linkedin-plugins';
 ```
 
 ### Render
