@@ -21,12 +21,13 @@ import {
 ```
 
 ### Render
-- [Linkedin Login](#in-login)
-- [Linkedin Profile](#in-profile)
-- [Linkedin Share](#in-share)
+- [Linkedin Login](#linkedin-login)
+- [Linkedin Profile](#linkedin-profile)
+- [Linkedin Share](#linkedin-share)
 
 #### Linkedin Login
 Renders a "Sign in with LinkedIn" button
+
 ```html
 <LinkedinLogin
     apiKey="xxxxxxxxxxxxxx"
@@ -39,6 +40,7 @@ Renders a "Sign in with LinkedIn" button
 
 #### Linkedin Profile
 Renders a "Add to profile" button
+
 ```html
 <LinkedinProfile
     lang="en_US"
@@ -48,6 +50,7 @@ Renders a "Add to profile" button
 
 #### Linkedin Share
 Render a "Share" button
+
 ```html
 <LinkedinShare
     apiKey="xxxxxxxxxxxxxx"

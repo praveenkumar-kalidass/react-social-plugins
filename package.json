@@ -2,7 +2,7 @@
   "name": "react-linkedin-sdk",
   "version": "1.0.0",
   "description": "LinkedIn SDK Components built with ReactJs",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "dev": "webpack-dev-server --config ./dev/webpack.config.js",
     "build": "babel ./src --out-dir ./lib",
