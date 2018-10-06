@@ -1,7 +1,7 @@
 {
-  "name": "react-linkedin-plugins",
+  "name": "react-social-plugins",
   "version": "1.0.0",
-  "description": "LinkedIn SDK Components built with ReactJs",
+  "description": "Social Network SDK Components built with ReactJs",
   "main": "./lib/index.js",
   "scripts": {
     "dev": "webpack-dev-server --config ./dev/webpack.config.js",
@@ -11,13 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/praveenkumar-outlook/react-linkedin-plugins.git"
+    "url": "git+https://github.com/praveenkumar-outlook/react-social-plugins.git"
   },
   "keywords": [
     "reactjs",
-    "linkedin",
+    "social",
     "sdk",
     "plugins",
+    "linkedin",
     "login",
     "share",
     "profile"
@@ -25,9 +26,9 @@
   "author": "Praveenkumar K <praveen.ece@outlook.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/praveenkumar-outlook/react-linkedin-plugins/issues"
+    "url": "https://github.com/praveenkumar-outlook/react-social-plugins/issues"
   },
-  "homepage": "https://github.com/praveenkumar-outlook/react-linkedin-plugins#readme",
+  "homepage": "https://github.com/praveenkumar-outlook/react-social-plugins#readme",
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",

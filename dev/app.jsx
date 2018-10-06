@@ -1,4 +1,4 @@
-import {LinkedinLogin, LinkedinProfile, LinkedinShare} from '../src/index';
+import {LinkedinLogin, LinkedinProfile, LinkedinShare} from '../src';
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 

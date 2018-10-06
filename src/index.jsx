@@ -1,6 +1,6 @@
-import LinkedinLogin from './sdk/LinkedinLogin.react';
-import LinkedinProfile from './sdk/LinkedinProfile.react';
-import LinkedinShare from './sdk/LinkedinShare.react';
+import LinkedinLogin from './linkedin/LinkedinLogin.react';
+import LinkedinProfile from './linkedin/LinkedinProfile.react';
+import LinkedinShare from './linkedin/LinkedinShare.react';
 
 export {
     LinkedinLogin,

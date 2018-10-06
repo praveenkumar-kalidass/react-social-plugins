@@ -1,11 +1,11 @@
-# React Linkedin Plugins
+# React Social Plugins
 
 ## Install
 
 Install the component using [NPM](https://www.npmjs.com/):
 
 ```sh
-$ npm install --save react-linkedin-plugins
+$ npm install --save react-social-plugins
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ import {
     LinkedinLogin,
     LinkedinProfile,
     LinkedinShare
-} from 'react-linkedin-plugins';
+} from 'react-social-plugins';
 ```
 
 ### Render
@@ -58,11 +58,6 @@ Render a "Share" button
     lang="en_US"
 />
 ```
-
-## Roadmap
-- [X] Login
-- [X] Add to Profile
-- [X] Share
 
 ## License
 
