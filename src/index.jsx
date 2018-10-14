@@ -1,11 +1,11 @@
 import LinkedinFollowCompany from './linkedin/LinkedinFollowCompany';
-import LinkedinLogin from './linkedin/LinkedinLogin.react';
-import LinkedinProfile from './linkedin/LinkedinProfile.react';
-import LinkedinShare from './linkedin/LinkedinShare.react';
+import LinkedinLogin from './linkedin/LinkedinLogin';
+import LinkedinAddProfile from './linkedin/LinkedinAddProfile';
+import LinkedinShare from './linkedin/LinkedinShare';
 
 export {
   LinkedinFollowCompany,
   LinkedinLogin,
-  LinkedinProfile,
+  LinkedinAddProfile,
   LinkedinShare
 };

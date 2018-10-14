@@ -1,7 +1,7 @@
 import {
   LinkedinFollowCompany,
   LinkedinLogin,
-  LinkedinProfile,
+  LinkedinAddProfile,
   LinkedinShare
 } from '../src';
 import React, {Component} from 'react';
@@ -31,7 +31,7 @@ class App extends Component {
           authorize
           lang="en_US"
         />
-        <LinkedinProfile
+        <LinkedinAddProfile
           lang="en_US"
           task="CERTIFICATION_NAME"
         />

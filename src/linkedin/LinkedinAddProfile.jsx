@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
-class LinkedinProfile extends Component {
+class LinkedinAddProfile extends Component {
   static propTypes = {
     lang: PropTypes.string,
-    task: PropTypes.string
+    task: PropTypes.oneOf(['CERTIFICATION_NAME', 'SCHOOL_NAME'])
   };
 
   static defaultProps = {
@@ -32,4 +32,4 @@ class LinkedinProfile extends Component {
   }
 }
 
-export default LinkedinProfile;
+export default LinkedinAddProfile;
