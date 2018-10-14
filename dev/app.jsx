@@ -1,5 +1,6 @@
 import {
   LinkedinAddProfile,
+  LinkedinCompanyProfile,
   LinkedinFollowCompany,
   LinkedinLogin,
   LinkedinProfile,
@@ -31,6 +32,12 @@ class App extends Component {
           apiKey="78reka6gey2jsx"
           authorize
           lang="en_US"
+        />
+        <LinkedinCompanyProfile
+          lang="en_US"
+          companyId={2414183}
+          format="inline"
+          text="Praveenkumar K"
         />
         <LinkedinProfile
           lang="en_US"
