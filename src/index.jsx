@@ -3,7 +3,7 @@ import LinkedinProfile from './linkedin/LinkedinProfile.react';
 import LinkedinShare from './linkedin/LinkedinShare.react';
 
 export {
-    LinkedinLogin,
-    LinkedinProfile,
-    LinkedinShare
+  LinkedinLogin,
+  LinkedinProfile,
+  LinkedinShare
 };

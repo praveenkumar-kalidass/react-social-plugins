@@ -5,8 +5,8 @@
         "node": true
     },
     "extends": [
-        "eslint:all",
-        "plugin:react/all"
+        "eslint:recommended",
+        "plugin:react/recommended"
     ],
     "parser": "babel-eslint",
     "parserOptions": {
@@ -30,7 +30,7 @@
     "rules": {
         "indent": [
             "error",
-            4
+            2
         ],
         "linebreak-style": [
             "error",

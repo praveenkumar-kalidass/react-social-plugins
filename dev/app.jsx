@@ -3,39 +3,39 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
 class App extends Component {
-    handleError = (data) => {
-        alert('Success', data);
-    }
+  handleError = (data) => {
+    alert('Success', data);
+  }
 
-    handleSuccess = (data) => {
-        alert('Error', data);
-    }
+  handleSuccess = (data) => {
+    alert('Error', data);
+  }
 
-    render () {
-        return (
-            <div>
-                <LinkedinLogin
-                    apiKey="78reka6gey2jsx"
-                    authorize
-                    lang="en_US"
-                    onError={this.handleError}
-                    onSuccess={this.handleSuccess}
-                />
-                <LinkedinShare
-                    apiKey="78reka6gey2jsx"
-                    authorize
-                    lang="en_US"
-                />
-                <LinkedinProfile
-                    lang="en_US"
-                    task="CERTIFICATION_NAME"
-                />
-            </div>
-        );
-    }
+  render () {
+    return (
+      <div>
+        <LinkedinLogin
+          apiKey="78reka6gey2jsx"
+          authorize
+          lang="en_US"
+          onError={this.handleError}
+          onSuccess={this.handleSuccess}
+        />
+        <LinkedinShare
+          apiKey="78reka6gey2jsx"
+          authorize
+          lang="en_US"
+        />
+        <LinkedinProfile
+          lang="en_US"
+          task="CERTIFICATION_NAME"
+        />
+      </div>
+    );
+  }
 }
 
 ReactDOM.render(
-    <App />,
-    document.getElementById('app')
+  <App />,
+  document.getElementById('app')
 );
