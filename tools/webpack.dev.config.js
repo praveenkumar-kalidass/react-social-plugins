@@ -9,7 +9,7 @@ module.exports = {
     port: 3000
   },
   devtool: 'source-map',
-  entry: path.join(__dirname, 'app.jsx'),
+  entry: path.join(__dirname, '../dev/app.jsx'),
   mode: 'development',
   module: {
     rules: [
@@ -34,7 +34,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: path.join(__dirname, '../public/index.html'),
-      template: path.join(__dirname, 'index.html')
+      template: path.join(__dirname, '../dev/index.html')
     }),
     new webpack.HotModuleReplacementPlugin()
   ],
