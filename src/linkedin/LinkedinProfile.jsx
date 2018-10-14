@@ -1,16 +1,18 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
-class LinkedinFollowCompany extends Component {
+class LinkedinProfile extends Component {
   static propTypes = {
-    companyId: PropTypes.number,
-    counter: PropTypes.oneOf(['top', 'right']),
-    lang: PropTypes.string
+    format: PropTypes.oneOf(['inline', 'hover']),
+    lang: PropTypes.string,
+    profileUrl: PropTypes.string.isRequired,
+    text: PropTypes.string
   };
 
   static defaultProps = {
-    counter: 'top',
-    lang: 'en_US'
+    format: 'inline',
+    lang: 'en_US',
+    text: 'Profile'
   };
 
   componentDidMount () {
@@ -33,18 +35,24 @@ class LinkedinFollowCompany extends Component {
   }
 
   render () {
-    const {companyId, counter} = this.props;
+    const {
+      format,
+      profileUrl,
+      text
+    } = this.props;
 
     return (
       <div>
         <script
-          type="IN/FollowCompany"
-          data-id={companyId}
-          data-counter={counter}
+          type="IN/MemberProfile"
+          data-id={profileUrl}
+          data-format={format}
+          data-related="false"
+          data-text={text}
         />
       </div>
     );
   }
 }
 
-export default LinkedinFollowCompany;
+export default LinkedinProfile;

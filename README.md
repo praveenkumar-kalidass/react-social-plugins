@@ -16,6 +16,7 @@ $ npm install --save react-social-plugins
 import {
   LinkedinFollowCompany,
   LinkedinLogin,
+  LinkedinAddProfile,
   LinkedinProfile,
   LinkedinShare
 } from 'react-social-plugins';
@@ -24,6 +25,7 @@ import {
 ### Render
 - [Linkedin Follow Company](#linkedin-follow-company)
 - [Linkedin Login](#linkedin-login)
+- [Linkedin Add Profile](#linkedin-add-profile)
 - [Linkedin Profile](#linkedin-profile)
 - [Linkedin Share](#linkedin-share)
 
@@ -32,10 +34,8 @@ Renders a "Follow" button for a company
 
 ```html
 <LinkedinFollowCompany
-  apiKey="xxxxxxxxxxxxxx"
   companyId={12312312}
   counter="top" // Or "right"
-  authorize
   lang="en_US"
 />
 ```
@@ -53,13 +53,25 @@ Renders a "Sign in with LinkedIn" button
 />
 ```
 
-#### Linkedin Profile
+#### Linkedin Add Profile
 Renders a "Add to profile" button
+
+```html
+<LinkedinAddProfile
+  lang="en_US"
+  task="CERTIFICATION_NAME" // Or "SCHOOL_NAME"
+/>
+```
+
+#### Linkedin Profile
+Renders a "Member profile" card
 
 ```html
 <LinkedinProfile
   lang="en_US"
-  task="CERTIFICATION_NAME" // Or "SCHOOL_NAME"
+  profileUrl="http://www.linkedin.com/in/praveenkumar-outlook"
+  format="inline" // Or "hover"
+  text="Praveenkumar K" // text to show in "hover" format
 />
 ```
 

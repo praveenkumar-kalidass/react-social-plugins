@@ -1,7 +1,8 @@
 import {
+  LinkedinAddProfile,
   LinkedinFollowCompany,
   LinkedinLogin,
-  LinkedinAddProfile,
+  LinkedinProfile,
   LinkedinShare
 } from '../src';
 import React, {Component} from 'react';
@@ -31,14 +32,18 @@ class App extends Component {
           authorize
           lang="en_US"
         />
+        <LinkedinProfile
+          lang="en_US"
+          profileUrl="http://www.linkedin.com/in/praveenkumar-outlook"
+          format="inline"
+          text="Praveenkumar K"
+        />
         <LinkedinAddProfile
           lang="en_US"
           task="CERTIFICATION_NAME"
         />
         <LinkedinFollowCompany
-          apiKey="78reka6gey2jsx"
           companyId={2414183}
-          authorize
           lang="en_US"
         />
       </div>
