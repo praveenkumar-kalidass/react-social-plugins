@@ -1,4 +1,9 @@
-import {LinkedinLogin, LinkedinProfile, LinkedinShare} from '../src';
+import {
+  LinkedinFollowCompany,
+  LinkedinLogin,
+  LinkedinProfile,
+  LinkedinShare
+} from '../src';
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
@@ -29,6 +34,12 @@ class App extends Component {
         <LinkedinProfile
           lang="en_US"
           task="CERTIFICATION_NAME"
+        />
+        <LinkedinFollowCompany
+          apiKey="78reka6gey2jsx"
+          companyId={2414183}
+          authorize
+          lang="en_US"
         />
       </div>
     );
