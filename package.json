@@ -1,8 +1,8 @@
 {
   "name": "react-social-plugins",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Social Network SDK Components built with ReactJs",
-  "main": "./lib/index.js",
+  "main": "./lib/react-social-plugins.js",
   "scripts": {
     "dev": "webpack-dev-server --config ./tools/webpack.dev.config.js",
     "build": "webpack --config ./tools/webpack.build.config.js --mode=none",
@@ -24,7 +24,9 @@
     "linkedin",
     "login",
     "share",
-    "profile"
+    "profile",
+    "company",
+    "follow"
   ],
   "author": "Praveenkumar K <praveen.ece@outlook.com>",
   "license": "MIT",
