@@ -13,9 +13,10 @@ module.exports = (...args) => ({
           options: {
             babelrc: false,
             plugins: [
-              'transform-class-properties'
+              '@babel/plugin-proposal-class-properties'
             ],
             presets: [
+              '@babel/preset-env',
               '@babel/preset-react'
             ]
           }

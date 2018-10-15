@@ -20,8 +20,13 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             babelrc: false,
-            plugins: ['transform-class-properties'],
-            presets: ['@babel/preset-react']
+            plugins: [
+              '@babel/plugin-proposal-class-properties'
+            ],
+            presets: [
+              '@babel/preset-env',
+              '@babel/preset-react'
+            ]
           }
         }
       }

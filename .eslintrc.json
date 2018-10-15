@@ -25,7 +25,10 @@
         "react"
     ],
     "globals": {
-        "IN": true
+        "IN": true,
+        "describe": true,
+        "it": true,
+        "expect": true
     },
     "rules": {
         "indent": [

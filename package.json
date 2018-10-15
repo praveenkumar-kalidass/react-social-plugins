@@ -8,7 +8,9 @@
     "build": "webpack --config ./tools/webpack.build.config.js --mode=none",
     "build-min": "webpack --config ./tools/webpack.build.config.js --mode=production",
     "eslint": "eslint --ext .jsx,.js src/",
-    "lint-dev": "eslint --ext .jsx,.js dev/"
+    "lint-dev": "eslint --ext .jsx,.js dev/",
+    "test": "jest",
+    "coverage": "jest --collectCoverageFrom=\"src/**/*.jsx\" --coverage"
   },
   "repository": {
     "type": "git",
@@ -31,16 +33,23 @@
   },
   "homepage": "https://github.com/praveenkumar-outlook/react-social-plugins#readme",
   "devDependencies": {
-    "@babel/core": "^7.0.0",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.0",
-    "babel-plugin-transform-class-properties": "^6.24.1",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
     "eslint": "^5.5.0",
     "eslint-plugin-react": "^7.11.1",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.6.0",
     "pre-commit": "^1.2.2",
     "react-dom": "^16.4.2",
+    "sinon": "^7.0.0",
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.6"
