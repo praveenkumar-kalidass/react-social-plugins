@@ -28,7 +28,8 @@
         "IN": true,
         "describe": true,
         "it": true,
-        "expect": true
+        "expect": true,
+        "beforeAll": true
     },
     "rules": {
         "indent": [
