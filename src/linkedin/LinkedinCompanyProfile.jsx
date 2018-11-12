@@ -19,19 +19,21 @@ class LinkedinCompanyProfile extends Component {
     // Load the SDK asynchronously
     ((doc, tag, id) => {
       const {lang} = this.props,
-        [element] = doc.getElementsByTagName(tag),
-        fjs = element;
-      let js = element;
+        [element] = doc.querySelectorAll(tag);
       if (doc.getElementById(id)) {
         return;
       }
-      js = doc.createElement(tag);
+      let js = doc.createElement('script');
       js.id = id;
       js.type = 'text/javascript';
       js.src = '//platform.linkedin.com/in.js';
       js.innerHTML = `lang: ${lang}`;
-      fjs.parentNode.insertBefore(js, fjs);
-    })(document, 'script', 'linkedin-jssdk');
+      element.insertBefore(js, element.lastChild);
+    })(document, '.linkedin-company-profile', 'linkedin-jssdk');
+  }
+
+  componentWillUnmount () {
+    window.IN = {};
   }
 
   render () {
@@ -42,7 +44,7 @@ class LinkedinCompanyProfile extends Component {
     } = this.props;
 
     return (
-      <div>
+      <div className="linkedin-company-profile">
         <script
           type="IN/CompanyProfile"
           data-id={companyId}

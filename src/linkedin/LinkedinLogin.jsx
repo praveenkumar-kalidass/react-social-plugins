@@ -23,13 +23,11 @@ class LinkedinLogin extends Component {
     // Load the SDK asynchronously
     ((doc, tag, id) => {
       const {apiKey, authorize, lang} = this.props,
-        [element] = doc.getElementsByTagName(tag),
-        fjs = element;
-      let js = element;
+        [element] = doc.querySelectorAll(tag);
       if (doc.getElementById(id)) {
         return;
       }
-      js = doc.createElement(tag);
+      let js = doc.createElement('script');
       js.id = id;
       js.type = 'text/javascript';
       js.src = '//platform.linkedin.com/in.js';
@@ -37,8 +35,12 @@ class LinkedinLogin extends Component {
         authorize: ${authorize}
         lang: ${lang}
         onLoad: onLinkedInLoad`;
-      fjs.parentNode.insertBefore(js, fjs);
-    })(document, 'script', 'linkedin-jssdk');
+      element.insertBefore(js, element.lastChild);
+    })(document, '.linkedin-login', 'linkedin-jssdk');
+  }
+
+  componentWillUnmount () {
+    window.IN = {};
   }
 
   getProfileData = () => {
@@ -50,7 +52,7 @@ class LinkedinLogin extends Component {
 
   render () {
     return (
-      <div>
+      <div className="linkedin-login">
         <script type="IN/Login" />
       </div>
     );

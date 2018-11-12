@@ -60,15 +60,6 @@
             "error",
             15
         ],
-        "class-methods-use-this": [
-            "error",
-            {
-                "exceptMethods": [
-                    "render",
-                    "shouldComponentUpdate"
-                ]
-            }
-        ],
         "no-invalid-this": [
             "off",
             "always"

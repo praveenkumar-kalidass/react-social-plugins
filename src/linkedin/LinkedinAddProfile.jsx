@@ -12,7 +12,7 @@ class LinkedinAddProfile extends Component {
     task: 'CERTIFICATION_NAME'
   };
 
-  render () {
+  render() {
     const {lang, task} = this.props;
 
     return (
@@ -20,8 +20,7 @@ class LinkedinAddProfile extends Component {
         <a
           href={`https://www.linkedin.com/profile/add?startTask=${task}`}
           rel="noopener noreferrer"
-          target="_blank"
-        >
+          target="_blank">
           <img
             alt="LinkedIn Add to Profile button"
             src={`https://download.linkedin.com/desktop/add2profile/buttons/${lang}.png`}
