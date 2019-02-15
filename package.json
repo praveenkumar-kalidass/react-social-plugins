@@ -1,6 +1,6 @@
 {
   "name": "react-social-plugins",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "Social Network SDK Components built with ReactJs",
   "main": "./lib/react-social-plugins.js",
   "scripts": {
