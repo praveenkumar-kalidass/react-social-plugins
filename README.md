@@ -36,6 +36,7 @@ import {
   LinkedinProfile,
   LinkedinShare,
 
+  TwitterButton,
   TwitterTweet
 } from 'react-social-plugins';
 ```
@@ -49,6 +50,7 @@ import {
 - [Linkedin Share](#linkedin-share)
 
 ### Twitter Plugins
+- [Twitter Button](#twitter-button)
 - [Twitter Tweet](#twitter-tweet)
 
 #### Linkedin Follow Company
@@ -130,6 +132,39 @@ Renders the Tweet with the conversation
   tweetId='xxxxxxxxxxxxxxxx'
   theme='light'
   width={325}
+/>
+```
+
+#### Twitter Button
+Renders the Tweet button to either Share, Mention or Hashtag
+
+```html
+<TwitterButton
+  target="/"
+  text="Hello World"
+  type="Share"
+/>
+```
+
+```html
+<TwitterButton
+  hashtags="one,two"
+  target="username"
+  text="Hello World"
+  type="Mention"
+  size="large"
+  via="username"
+/>
+```
+
+```html
+<TwitterButton
+  hashtags="one,two"
+  target="username"
+  text="Hello World"
+  type="Hashtag"
+  size="large"
+  via="username"
 />
 ```
 

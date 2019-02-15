@@ -22,11 +22,15 @@
     "sdk",
     "plugins",
     "linkedin",
+    "twitter",
     "login",
     "share",
     "profile",
     "company",
-    "follow"
+    "follow",
+    "tweet",
+    "mention",
+    "hastag"
   ],
   "author": "Praveenkumar K <praveen.ece@outlook.com>",
   "license": "MIT",

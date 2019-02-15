@@ -7,6 +7,7 @@ import LinkedinProfile from './linkedin/LinkedinProfile';
 import LinkedinShare from './linkedin/LinkedinShare';
 
 // Twiiter Plugins
+import TwitterButton from './twitter/TwitterButton';
 import TwitterTweet from './twitter/TwitterTweet';
 
 export {
@@ -17,5 +18,6 @@ export {
   LinkedinProfile,
   LinkedinShare,
 
+  TwitterButton,
   TwitterTweet
 };

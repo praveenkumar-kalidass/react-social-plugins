@@ -6,6 +6,7 @@ import {
   LinkedinProfile,
   LinkedinShare,
 
+  TwitterButton,
   TwitterTweet
 } from '../src';
 import React, {Component} from 'react';
@@ -61,6 +62,27 @@ class App extends Component {
           tweetId='1068002376496275461'
           theme='light'
           width={325}
+        />
+        <TwitterButton
+          target="/"
+          text="Hello World"
+          type="Share"
+        />
+        <TwitterButton
+          hashtags="one,two"
+          target="username"
+          text="Hello World"
+          type="Mention"
+          size="large"
+          via="username"
+        />
+        <TwitterButton
+          hashtags="one,two"
+          target="username"
+          text="Hello World"
+          type="Hashtag"
+          size="large"
+          via="username"
         />
       </div>
     );
