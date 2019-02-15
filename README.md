@@ -34,17 +34,22 @@ import {
   LinkedinLogin,
   LinkedinAddProfile,
   LinkedinProfile,
-  LinkedinShare
+  LinkedinShare,
+
+  TwitterTweet
 } from 'react-social-plugins';
 ```
 
-### Render
+### Linkedin Plugins
 - [Linkedin Follow Company](#linkedin-follow-company)
 - [Linkedin Login](#linkedin-login)
 - [Linkedin Add Profile](#linkedin-add-profile)
 - [Linkedin Profile](#linkedin-profile)
 - [Linkedin Company Profile](#linkedin-company-profile)
 - [Linkedin Share](#linkedin-share)
+
+### Twitter Plugins
+- [Twitter Tweet](#twitter-tweet)
 
 #### Linkedin Follow Company
 Renders a "Follow" button for a company
@@ -112,6 +117,19 @@ Render a "Share" button
   apiKey="xxxxxxxxxxxxxx"
   authorize
   lang="en_US"
+/>
+```
+
+#### Twitter Tweet
+Renders the Tweet with the conversation
+
+```html
+<TwitterTweet
+  align='left'
+  coversation='none'
+  tweetId='xxxxxxxxxxxxxxxx'
+  theme='light'
+  width={325}
 />
 ```
 

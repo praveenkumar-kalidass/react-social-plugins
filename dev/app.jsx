@@ -4,7 +4,9 @@ import {
   LinkedinFollowCompany,
   LinkedinLogin,
   LinkedinProfile,
-  LinkedinShare
+  LinkedinShare,
+
+  TwitterTweet
 } from '../src';
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
@@ -52,6 +54,13 @@ class App extends Component {
         <LinkedinFollowCompany
           companyId={2414183}
           lang="en_US"
+        />
+        <TwitterTweet
+          align='left'
+          coversation='none'
+          tweetId='1068002376496275461'
+          theme='light'
+          width={325}
         />
       </div>
     );
