@@ -6,15 +6,15 @@
   "scripts": {
     "dev": "webpack-dev-server --config ./tools/webpack.dev.config.js",
     "build": "webpack --config ./tools/webpack.build.config.js --mode=none",
-    "build-min": "webpack --config ./tools/webpack.build.config.js --mode=production",
+    "build:min": "webpack --config ./tools/webpack.build.config.js --mode=production",
     "lint": "eslint --ext .jsx,.js src/",
-    "lint-dev": "eslint --ext .jsx,.js dev/",
+    "lint:dev": "eslint --ext .jsx,.js dev/",
     "test": "jest",
     "coverage": "jest --collectCoverageFrom=\"src/**/*.jsx\" --coverage"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/praveenkumar-outlook/react-social-plugins.git"
+    "url": "git+https://github.com/praveenkumar-kalidass/react-social-plugins.git"
   },
   "keywords": [
     "reactjs",
@@ -32,12 +32,12 @@
     "mention",
     "hastag"
   ],
-  "author": "Praveenkumar K <praveen.ece@outlook.com>",
+  "author": "Praveenkumar Kalidass <praveen.ece@outlook.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/praveenkumar-outlook/react-social-plugins/issues"
+    "url": "https://github.com/praveenkumar-kalidass/react-social-plugins/issues"
   },
-  "homepage": "https://github.com/praveenkumar-outlook/react-social-plugins#readme",
+  "homepage": "https://github.com/praveenkumar-kalidass/react-social-plugins#readme",
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
