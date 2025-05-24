@@ -4,13 +4,11 @@
   "description": "Social Network SDK Components built with ReactJs",
   "main": "./lib/react-social-plugins.js",
   "scripts": {
-    "dev": "webpack-dev-server --config ./tools/webpack.dev.config.js",
-    "build": "webpack --config ./tools/webpack.build.config.js --mode=none",
-    "build:min": "webpack --config ./tools/webpack.build.config.js --mode=production",
-    "lint": "eslint --ext .jsx,.js src/",
-    "lint:dev": "eslint --ext .jsx,.js dev/",
-    "test": "jest",
-    "coverage": "jest --collectCoverageFrom=\"src/**/*.jsx\" --coverage"
+    "compile": "tsc --build",
+    "build": "webpack --mode=none",
+    "build:min": "webpack --mode=production",
+    "clean": "rm -rf dist && rm -rf lib",
+    "lint": "eslint src/"
   },
   "repository": {
     "type": "git",
@@ -32,35 +30,26 @@
     "mention",
     "hastag"
   ],
-  "author": "Praveenkumar Kalidass <praveen.ece@outlook.com>",
+  "author": "Praveenkumar Kalidass <praveenkumar.kalidass@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/praveenkumar-kalidass/react-social-plugins/issues"
   },
   "homepage": "https://github.com/praveenkumar-kalidass/react-social-plugins#readme",
+  "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72",
   "devDependencies": {
-    "@babel/core": "^7.11.6",
-    "@babel/plugin-proposal-class-properties": "^7.10.4",
-    "@babel/preset-env": "^7.11.5",
-    "@babel/preset-react": "^7.10.4",
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^10.1.0",
-    "babel-jest": "^26.3.0",
-    "babel-loader": "^8.1.0",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.4",
-    "eslint": "^7.8.1",
-    "eslint-plugin-react": "^7.20.6",
-    "html-webpack-plugin": "^4.4.1",
-    "jest": "^26.4.2",
-    "react-dom": "^16.13.1",
-    "sinon": "^9.0.3",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "@eslint/js": "^9.7.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/react": "^18.3.3",
+    "eslint": "^9.7.0",
+    "ts-loader": "^9.5.1",
+    "types-webpack-bundler": "^1.0.2",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.16.0",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4"
   },
-  "dependencies": {
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1"
+  "peerDependencies": {
+    "react": "^18.3.1"
   }
 }

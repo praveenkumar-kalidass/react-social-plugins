@@ -1,6 +1,0 @@
-node_modules/
-dev/
-coverage/
-tools/
-*.log
-npm-debug.log
