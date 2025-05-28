@@ -8,7 +8,9 @@
     "build": "webpack --mode=none",
     "build:min": "webpack --mode=production",
     "clean": "rm -rf dist && rm -rf lib",
-    "lint": "eslint src/"
+    "lint": "eslint src/",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "repository": {
     "type": "git",
@@ -39,9 +41,19 @@
   "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72",
   "devDependencies": {
     "@eslint/js": "^9.7.0",
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/addon-interactions": "^8.6.14",
+    "@storybook/addon-onboarding": "^8.6.14",
+    "@storybook/addon-webpack5-compiler-swc": "^3.0.0",
+    "@storybook/blocks": "^8.6.14",
+    "@storybook/react": "^8.6.14",
+    "@storybook/react-webpack5": "^8.6.14",
+    "@storybook/test": "^8.6.14",
     "@types/eslint__js": "^8.42.3",
     "@types/react": "^18.3.3",
     "eslint": "^9.7.0",
+    "eslint-plugin-storybook": "^0.12.0",
+    "storybook": "^8.6.14",
     "ts-loader": "^9.5.1",
     "types-webpack-bundler": "^1.0.2",
     "typescript": "^5.5.3",
@@ -51,5 +63,10 @@
   },
   "peerDependencies": {
     "react": "^18.3.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
   }
 }

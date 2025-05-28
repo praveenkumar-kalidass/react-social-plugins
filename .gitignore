@@ -2,3 +2,5 @@ node_modules
 dist
 lib
 .DS_Store
+*storybook.log
+storybook-static
