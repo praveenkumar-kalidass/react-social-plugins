@@ -1,176 +1,142 @@
-# React Social Plugins
+# 📄 react-social-plugins
 
-<p>
+**A lightweight React library for rendering Social network plugins in HTML**
+
+<div align="center">
   <a href="https://www.npmjs.com/package/react-social-plugins">
-    <img src="https://badge.fury.io/js/react-social-plugins.svg" alt="npm version" height="18">
-  </a>
-  <a href="https://www.npmjs.com/package/react-social-plugins">
-    <img src="https://david-dm.org/praveenkumar-outlook/react-social-plugins/status.svg" alt="dependencies Status badge">
-    </a>
-  <a href="https://www.npmjs.com/package/react-social-plugins">
-    <img src="https://david-dm.org/praveenkumar-outlook/react-social-plugins/dev-status.svg" alt="devDependency Status badge">
+    <img src="https://img.shields.io/npm/v/react-social-plugins.svg?style=flat-square&color=orange&label=npm" alt="NPM Version">
+  </a
+  <a href="https://github.com/praveenkumar-kalidass/react-social-plugins/blob/HEAD/LICENSE">
+    <img src="https://img.shields.io/github/license/praveenkumar-kalidass/react-social-plugins?style=flat-square&color=blue" alt="License">
   </a>
   <a href="https://www.npmjs.com/package/react-social-plugins">
     <img src="https://img.shields.io/npm/dw/react-social-plugins" alt="Downloads">
   </a>
-  <a href="https://paypal.me/praveenkumarkalidass?locale.x=en_GB">
-    <img src="https://img.shields.io/badge/paypal-donate-red" alt="Paypal">
+  <a href="https://github.com/praveenkumar-kalidass/react-social-plugins">
+    <img src="https://img.shields.io/github/stars/praveenkumar-kalidass/react-social-plugins?style=flat-square&color=yellow" alt="GitHub stars">
   </a>
+  <a href="https://github.com/praveenkumar-kalidass/react-social-plugins/commits/HEAD">
+    <img src="https://img.shields.io/github/last-commit/praveenkumar-kalidass/react-social-plugins?style=flat-square" alt="Last commit">
+  </a>
+  <a href="https://github.com/praveenkumar-kalidass/react-social-plugins/issues">
+    <img src="https://img.shields.io/github/issues/praveenkumar-kalidass/react-social-plugins?style=flat-square" alt="Open Issues">
+  </a>
+  </a>
+  <img src="https://img.shields.io/badge/Made%20with-React-61DAFB?style=flat-square&logo=react&logoColor=white" alt="Made with React">
+  <img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen?style=flat-square" alt="Maintained">
+  <a href="https://paypal.me/praveenkumarkalidass?locale.x=en_GB">
+    <img src="https://img.shields.io/badge/paypal-donate-red" alt="Donate via PayPal">
+  </a>
+</div>
+
+---
+
+<p align="center">
+  <b>React components for social media integration</b>
+  <br />
+  <a href="https://praveenkumar-kalidass.github.io/react-social-plugins">View Demo</a>
+  ·
+  <a href="https://github.com/praveenkumar-kalidass/react-social-plugins/issues">Report Bug</a>
+  ·
+  <a href="https://github.com/praveenkumar-kalidass/react-social-plugins/issues">Request Feature</a>
 </p>
 
-## Install
+---
 
-Install the component using [NPM](https://www.npmjs.com/):
+## ✨ Features
 
-```sh
-$ npm install --save react-social-plugins
+- 🔌 Easy integration with LinkedIn and X (Twitter)
+- 🎨 Customizable themes and layouts
+- 📱 Responsive and mobile-friendly
+- 🚀 Lightweight and performant
+- 📖 Comprehensive documentation
+
+---
+
+## 📦 Installation
+
+```bash
+# Using npm
+npm install react-social-plugins
+
+# Using yarn
+yarn add react-social-plugins
 ```
 
-## Usage
+---
 
-### Initialise module
+## 🚀 Quick Start
 
-```js
+```jsx
 import {
-  LinkedinCompanyProfile,
-  LinkedinFollowCompany,
-  LinkedinLogin,
-  LinkedinAddProfile,
-  LinkedinProfile,
   LinkedinShare,
-
-  TwitterButton,
-  TwitterTweet
+  LinkedinFollowCompany,
+  XButton,
+  XTweet
 } from 'react-social-plugins';
+
+// Use components in your app
+<LinkedinShare url="https://your-website.com" />
 ```
 
-### Linkedin Plugins
-- [Linkedin Follow Company](#linkedin-follow-company)
-- [Linkedin Login](#linkedin-login)
-- [Linkedin Add Profile](#linkedin-add-profile)
-- [Linkedin Profile](#linkedin-profile)
-- [Linkedin Company Profile](#linkedin-company-profile)
-- [Linkedin Share](#linkedin-share)
+---
 
-### Twitter Plugins
-- [Twitter Button](#twitter-button)
-- [Twitter Tweet](#twitter-tweet)
+## 📚 Documentation
 
-#### Linkedin Follow Company
-Renders a "Follow" button for a company
+### LinkedIn Components
 
-```html
-<LinkedinFollowCompany
-  companyId={12312312}
-  counter="top" // Or "right"
-  lang="en_US"
-/>
-```
+| Component | Description | Demo |
+|-----------|-------------|------|
+| `LinkedinShare` | Share button for LinkedIn | [View](https://praveenkumar-kalidass.github.io/react-social-plugins/?path=/docs/example-linkedinshare--docs) |
+| `LinkedinFollowCompany` | Follow company button | [View](https://praveenkumar-kalidass.github.io/react-social-plugins/?path=/docs/example-linkedinfollowcompany--docs) |
+| `LinkedinAddProfile` | Add to profile button | [View](https://praveenkumar-kalidass.github.io/react-social-plugins/?path=/docs/example-linkedinaddprofile--docs) |
+| `LinkedinProfile` | Profile card | [View](https://praveenkumar-kalidass.github.io/react-social-plugins/?path=/docs/example-linkedinprofile--docs) |
+| `LinkedinCompanyProfile` | Company profile card | [View](https://praveenkumar-kalidass.github.io/react-social-plugins/?path=/docs/example-linkedincompanyprofile--docs) |
+| `LinkedinLogin` | Sign in with LinkedIn button | [View](https://praveenkumar-kalidass.github.io/react-social-plugins/?path=/docs/example-linkedinlogin--docs) |
 
-#### Linkedin Login
-Renders a "Sign in with LinkedIn" button
+### X (Twitter) Components
 
-```html
-<LinkedinLogin
-  apiKey="xxxxxxxxxxxxxx"
-  authorize
-  lang="en_US"
-  onError={this.handleError}
-  onSuccess={this.handleSuccess}
-/>
-```
+| Component | Description | Demo |
+|-----------|-------------|------|
+| `XButton` | Versatile button for share, follow, mention & hashtag | [View](https://praveenkumar-kalidass.github.io/react-social-plugins/?path=/docs/example-xbutton--docs) |
+| `XTweet` | Embed tweets with customization | [View](https://praveenkumar-kalidass.github.io/react-social-plugins/?path=/docs/example-xtweet--docs) |
+| `XTimeline` | Embed timeline with themes | [View](https://praveenkumar-kalidass.github.io/react-social-plugins/?path=/docs/example-xtimeline--docs) |
 
-#### Linkedin Add Profile
-Renders a "Add to profile" button
+---
 
-```html
-<LinkedinAddProfile
-  lang="en_US"
-  task="CERTIFICATION_NAME" // Or "SCHOOL_NAME"
-/>
-```
+## 📚 Documentation
 
-#### Linkedin Profile
-Renders a "Member profile" card
+For detailed documentation and examples, visit our [Storybook](https://praveenkumar-kalidass.github.io/react-social-plugins).
 
-```html
-<LinkedinProfile
-  lang="en_US"
-  profileUrl="http://www.linkedin.com/in/praveenkumar-outlook"
-  format="inline" // Or "hover"
-  text="Praveenkumar K" // text to show in "hover" format
-/>
-```
+Each component's documentation includes:
+- Live examples
+- Props documentation
+- Usage guidelines
+- Interactive playground
 
-#### Linkedin Company Profile
-Renders a "Company profile" card
+---
 
-```html
-<LinkedinCompanyProfile
-  lang="en_US"
-  companyId={123123123}
-  format="inline" // Or "hover"
-  text="Company name" // text to show in "hover" format
-/>
-```
+## 🤝 Contributing
 
-#### Linkedin Share
-Render a "Share" button
+Pull requests, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/praveenkumar-kalidass/react-social-plugins/issues).
 
-```html
-<LinkedinShare
-  apiKey="xxxxxxxxxxxxxx"
-  authorize
-  lang="en_US"
-/>
-```
+---
 
-#### Twitter Tweet
-Renders the Tweet with the conversation
+## ❤️ Support
 
-```html
-<TwitterTweet
-  align='left'
-  coversation='none'
-  tweetId='xxxxxxxxxxxxxxxx'
-  theme='light'
-  width={325}
-/>
-```
+If you find this project helpful, consider [donating via PayPal](https://paypal.me/praveenkumarkalidass?locale.x=en_GB) 🙏
 
-#### Twitter Button
-Renders the Tweet button to either Share, Mention or Hashtag
+---
 
-```html
-<TwitterButton
-  target="/"
-  text="Hello World"
-  type="Share"
-/>
-```
+## 📝 License
 
-```html
-<TwitterButton
-  hashtags="one,two"
-  target="username"
-  text="Hello World"
-  type="Mention"
-  size="large"
-  via="username"
-/>
-```
+This project is licensed under the [MIT License](https://github.com/praveenkumar-kalidass/react-social-plugins/blob/HEAD/LICENSE).
 
-```html
-<TwitterButton
-  hashtags="one,two"
-  target="username"
-  text="Hello World"
-  type="Hashtag"
-  size="large"
-  via="username"
-/>
-```
+---
 
-## License
+<p align="center">
+  Made with ❤️ by <a href="https://github.com/praveenkumar-kalidass">Praveenkumar Kalidass</a>
+</p>
 
-[MIT License](http://opensource.org/licenses/MIT)
+---

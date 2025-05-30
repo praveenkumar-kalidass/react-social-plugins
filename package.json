@@ -1,8 +1,9 @@
 {
   "name": "react-social-plugins",
   "version": "2.1.0",
-  "description": "Social Network SDK Components built with ReactJs",
+  "description": "A lightweight React library for rendering Social network plugins in HTML",
   "main": "./lib/react-social-plugins.js",
+  "types": "./lib/react-social-plugins.d.ts",
   "scripts": {
     "compile": "tsc --build",
     "build": "webpack --mode=none",
@@ -17,20 +18,19 @@
     "url": "git+https://github.com/praveenkumar-kalidass/react-social-plugins.git"
   },
   "keywords": [
-    "reactjs",
+    "react",
     "social",
-    "sdk",
     "plugins",
     "linkedin",
     "twitter",
-    "login",
+    "x",
     "share",
     "profile",
     "company",
-    "follow",
+    "button",
     "tweet",
-    "mention",
-    "hastag"
+    "timeline",
+    "hashtag"
   ],
   "author": "Praveenkumar Kalidass <praveenkumar.kalidass@gmail.com>",
   "license": "MIT",
@@ -63,10 +63,5 @@
   },
   "peerDependencies": {
     "react": "^18.3.1"
-  },
-  "eslintConfig": {
-    "extends": [
-      "plugin:storybook/recommended"
-    ]
   }
 }
