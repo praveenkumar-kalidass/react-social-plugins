@@ -37,22 +37,22 @@ const Button = ({
 
   const href = useMemo(() => {
     const hrefMap: Record<XButtonProps['type'], string> = {
-      share: 'https://twitter.com/share',
       follow: `https://twitter.com/${via}`,
-      mention: `https://twitter.com/intent/tweet?screen_name=${via}`,
       hashtag: `https://twitter.com/intent/tweet?button_hashtag=${hashtags.join(',')}`,
+      mention: `https://twitter.com/intent/tweet?screen_name=${via}`,
       message: `https://twitter.com/messages/compose?recipient_id=3805104374`,
+      share: 'https://twitter.com/share',
     };
     return hrefMap[type];
   }, [type, via]);
 
   const className = useMemo(() => {
     const classNameMap: Record<XButtonProps['type'], string> = {
-      share: 'twitter-share-button',
       follow: 'twitter-follow-button',
-      mention: 'twitter-mention-button',
       hashtag: 'twitter-hashtag-button',
+      mention: 'twitter-mention-button',
       message: 'twitter-dm-button',
+      share: 'twitter-share-button',
     };
     return classNameMap[type];
   }, [type]);

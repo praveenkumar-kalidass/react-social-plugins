@@ -1,20 +1,21 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { LinkedinShare } from '../linkedin';
+import { LinkedinFollowCompany } from '../linkedin';
 
 const meta = {
-  component: LinkedinShare,
+  component: LinkedinFollowCompany,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
-  title: 'Example/LinkedInShare',
-} satisfies Meta<typeof LinkedinShare>;
+  title: 'Example/LinkedInFollowCompany',
+} satisfies Meta<typeof LinkedinFollowCompany>;
 
 export default meta;
 
 export const Example: StoryObj<typeof meta> = {
   args: {
+    counter: 'bottom',
+    id: '2414183',
     lang: 'hi_IN',
-    url: 'https://www.google.com',
   },
-};
+}; 
