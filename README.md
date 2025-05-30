@@ -89,10 +89,7 @@ import {
 |-----------|-------------|------|
 | `LinkedinShare` | Share button for LinkedIn | [View](https://praveenkumar-kalidass.github.io/react-social-plugins/?path=/docs/example-linkedinshare--docs) |
 | `LinkedinFollowCompany` | Follow company button | [View](https://praveenkumar-kalidass.github.io/react-social-plugins/?path=/docs/example-linkedinfollowcompany--docs) |
-| `LinkedinAddProfile` | Add to profile button | [View](https://praveenkumar-kalidass.github.io/react-social-plugins/?path=/docs/example-linkedinaddprofile--docs) |
-| `LinkedinProfile` | Profile card | [View](https://praveenkumar-kalidass.github.io/react-social-plugins/?path=/docs/example-linkedinprofile--docs) |
-| `LinkedinCompanyProfile` | Company profile card | [View](https://praveenkumar-kalidass.github.io/react-social-plugins/?path=/docs/example-linkedincompanyprofile--docs) |
-| `LinkedinLogin` | Sign in with LinkedIn button | [View](https://praveenkumar-kalidass.github.io/react-social-plugins/?path=/docs/example-linkedinlogin--docs) |
+| `LinkedinAddToProfile` | Add to profile button | [View](https://praveenkumar-kalidass.github.io/react-social-plugins/?path=/docs/example-linkedinaddtoprofile--docs) |
 
 ### X (Twitter) Components
 
