@@ -1,6 +1,6 @@
 {
   "name": "react-social-plugins",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "A lightweight React library for rendering Social network plugins in HTML",
   "main": "./lib/react-social-plugins.js",
   "types": "./lib/react-social-plugins.d.ts",
